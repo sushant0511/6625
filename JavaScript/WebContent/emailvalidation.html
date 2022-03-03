@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function mailValidate() {
+	
+var mail=document.chekmail.mail.value;
+
+var testSymbol=mail.indexOf("@");
+var dotpos=mail.lastIndexOf(".");
+alert(mail)
+if(testSymbol<1 || dotpos<testSymbol+2 || dotpos+2>=mail.length)
+	{
+	alert("Please enter proper email")
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+  <form name="chekmail" method="post" action="login.html" onsubmit="return mailValidate()">
+email <input type="text" name="mail"><br>
+
+<input type="submit" value="Test" > 
+</form>
+</body>
+</html>

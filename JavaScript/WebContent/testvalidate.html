@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function testrole() {
+	
+	
+	var name=document.testdata.name.value;
+	var pd=document.testdata.pwd.value;
+	var cpd=document.testdata.cpwd.value;
+	if(name==null || name=="")
+		{
+		alert("Name must have some value");
+		return false;
+		}
+	else if(pd.length<4)
+		{
+		alert("Pass must be greate than 4");
+		return false;
+		}
+	
+	if(pd="data")
+		{
+		return true;
+		}
+	else
+		{
+		return false;
+		}
+	
+	/* if(pd==cpd)
+	{
+		 alert("Macth")
+		return true;
+	}
+	else 
+		{
+	alert("Password not match");
+	return false;
+	}*/
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="testdata" method="post" action="login.html" onsubmit="return testrole()">
+Username <input type="text" name="name"><br>
+Pasword <input type="password" name="pwd"><br>
+Confrim Pasword <input type="password" name="cpwd"><br>
+<input type="submit" >
+</form>
+</body>
+</html>

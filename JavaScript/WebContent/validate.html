@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+function testForm() {
+	var un=document.test.t1.value;
+	if(un==null || un=="")
+		{
+		
+		alert("Please enter your user name");
+		return false;
+		}
+	
+		
+}
+
+
+</script>
+<body>
+Welcome To My Login Portal<br>
+ <form name="test" method="post" action="login.html" onsubmit="retrun testForm()">  
+User Name <input type="text" name="t1"><br>
+<!-- Password <input type="password" name="t2"><br> -->
+<input type="submit" value="Test" > 
+</form>
+</body>
+</html>
